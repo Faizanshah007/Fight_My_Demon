@@ -1,0 +1,32 @@
+Begin Object Class=/Script/Engine.Material Name="Boy01_Eyes_MAT1"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Texture=Texture2D'"/Game/AJ/Boy01_FacialAnimMap.Boy01_FacialAnimMap"'
+      MaterialExpressionEditorX=200
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=DE8795A24DDB087E1C92EFA2062A0F80
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/AJ/Boy01_FacialAnimMap.Boy01_FacialAnimMap"'
+      MaterialExpressionEditorX=240
+      MaterialExpressionEditorY=-320
+      MaterialExpressionGuid=DF7DD6F94820FAA4A85A50968813A92F
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   BlendMode=BLEND_Translucent
+   bUsedWithSkeletalMesh=True
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(1)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=2592E6DE4E8EBCC84B7BD88C01345403
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=47999E5743B1637E2706678A7C6557B3
+End Object
