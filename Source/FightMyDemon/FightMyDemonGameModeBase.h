@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "Rocket_CapGameModeBase.generated.h"
+#include "FightMyDemonGameModeBase.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class ROCKET_CAP_API ARocket_CapGameModeBase : public AGameModeBase
+class FIGHTMYDEMON_API AFightMyDemonGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	

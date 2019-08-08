@@ -7,7 +7,7 @@
 #include "Countdown.generated.h"
 
 UCLASS()
-class ROCKET_CAP_API ACountdown : public AActor
+class FIGHTMYDEMON_API ACountdown : public AActor
 {
 	GENERATED_BODY()
 

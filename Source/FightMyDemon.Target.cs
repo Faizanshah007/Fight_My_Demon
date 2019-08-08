@@ -3,12 +3,12 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class Rocket_CapTarget : TargetRules
+public class FightMyDemonTarget : TargetRules
 {
-	public Rocket_CapTarget(TargetInfo Target) : base(Target)
+	public FightMyDemonTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 
-		ExtraModuleNames.AddRange( new string[] { "Rocket_Cap" } );
+		ExtraModuleNames.AddRange( new string[] { "FightMyDemon" } );
 	}
 }

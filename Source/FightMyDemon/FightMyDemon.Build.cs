@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class Rocket_Cap : ModuleRules
+public class FightMyDemon : ModuleRules
 {
-	public Rocket_Cap(ReadOnlyTargetRules Target) : base(Target)
+	public FightMyDemon(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	

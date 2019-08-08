@@ -7,7 +7,7 @@
 #include "Monster.generated.h"
 
 UCLASS()
-class ROCKET_CAP_API AMonster : public APawn
+class FIGHTMYDEMON_API AMonster : public APawn
 {
 	GENERATED_BODY()
 

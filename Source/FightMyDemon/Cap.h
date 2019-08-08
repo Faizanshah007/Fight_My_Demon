@@ -10,7 +10,7 @@
 using namespace::std;
 
 UCLASS()
-class ROCKET_CAP_API ACap : public AActor
+class FIGHTMYDEMON_API ACap : public AActor
 {
 	GENERATED_BODY()
 	

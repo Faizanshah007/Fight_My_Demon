@@ -7,7 +7,7 @@
 #include "Kid.generated.h"
 
 UCLASS()
-class ROCKET_CAP_API AKid : public ACharacter
+class FIGHTMYDEMON_API AKid : public ACharacter
 {
 	GENERATED_BODY()
 
