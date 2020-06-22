@@ -27,10 +27,7 @@ void AMonster::Tick(float DeltaTime)
 	//Teleport Check
 	if (TeleportNow)
 	{
-		//Face towards the kid
-		UWorld* WorldRef = GetWorld();
-		AKid *KidRef = Cast<AKid>(WorldRef->GetFirstPlayerController()->GetCharacter());
-		SetActorLocation(GetActorLocation() + TeleportHere);
+		SetActorLocation(TeleportHere);
 		TeleportNow = false;
 	}
 
