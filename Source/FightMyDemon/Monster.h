@@ -28,7 +28,7 @@ public:
 
 	//When To Teleport
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	bool TeleportNow = false;
+		bool TeleportNow = false;
 
 	//Place To Teleport
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
