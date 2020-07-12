@@ -12,30 +12,37 @@ class FIGHTMYDEMON_API ACountdown : public AActor
 	GENERATED_BODY()
 
 public:	
+	
 	// Sets default values for this actor's properties
 	ACountdown();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
 	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	/*virtual void Tick(float DeltaTime) override;*/
+
 	//How long, in seconds, the countdown will run
 	UPROPERTY(EditAnywhere)
 	int32 CountdownTime;
-	class UTextRenderComponent* CountdownText;
-	void UpdateTimerDisplay();
+
+	UPROPERTY(EditAnywhere)
+	TArray<FString> StrArr = { TEXT("!!!!"), TEXT("here"), TEXT("is"), TEXT("Devil") };
+
+protected:
 	
-	void AdvanceTimer();
-	
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+	//Default implementation for ClearCountdownDisplay
+	virtual void ClearCountdownDisplay_Implementation();
+
 	UFUNCTION(BlueprintNativeEvent)
 	void ClearCountdownDisplay();
-	virtual void ClearCountdownDisplay_Implementation();
+
+private:
 	
-	virtual void CountdownHasFinished();
-	
+	class UTextRenderComponent* CountdownText;
+
+	void AdvanceTimer();
+
 	FTimerHandle CountdownTimerHandle;
 	
 };
