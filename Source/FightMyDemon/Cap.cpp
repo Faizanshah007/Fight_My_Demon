@@ -19,7 +19,7 @@ ACap::ACap()
 	// Finding Objects
 	static ConstructorHelpers::FObjectFinder<UParticleSystem> PS(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> PS1(TEXT("StaticMesh'/Engine/BasicShapes/Cone.Cone'"));
-	static ConstructorHelpers::FObjectFinder<UMaterial> MeshMaterial(TEXT("Material'/Game/Meshes/MyMaterial.MyMaterial'"));
+	static ConstructorHelpers::FObjectFinder<UMaterial> MeshMaterial(TEXT("Material'/Game/Meshes/CapMaterial.CapMaterial'"));
 	// Root
 	RootScene = CreateDefaultSubobject<USceneComponent>(TEXT("DummyRootScene"));
 	// Floating Cone
@@ -70,12 +70,12 @@ void ACap::Tick(float DeltaTime)
 		MyParticleSystem->ActivateSystem(true);
 	}
 
-	// Rainbow Effect
-	if (ColorCount > 6 * ChangeFreq)
+	// Colour Changing Effect
+	if (ColorCounter >= NumberofColors * ChangeFreq)
 	{
-		ColorCount = 0;
+		ColorCounter = 0;
 	}
 
-	MaterialInstance->SetVectorParameterValue("Rainbow", vibgyor[ColorCount++/ChangeFreq]);
+	MaterialInstance->SetVectorParameterValue("MultiColor_Dark", Colors[int(ColorCounter++/ChangeFreq)]);
 }
 

@@ -15,33 +15,35 @@ class FIGHTMYDEMON_API ACap : public AActor
 	GENERATED_BODY()
 	
 public:	
+
 	// Sets default values for this actor's properties
 	ACap();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-private:
-	float RunningTime;
+protected:
 
-	vector<FColor> vibgyor = { FColor(148,0,211), FColor(75, 0, 130), FColor::Blue, FColor::Green, FColor::Yellow, FColor::Orange, FColor::Red };
-	int ColorCount = 0;
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+private:
+
+	float RunningTime;
+	
+	TArray<FLinearColor> Colors = { FLinearColor(1, 1, 1, 0), FLinearColor(0, 1, 0, 0), FLinearColor::Yellow };
+	
+	int NumberofColors = Colors.Num();
+	
+	int ColorCounter = 0;
 
 	UPROPERTY(EditAnywhere)
 	int ChangeFreq = 10;
 
-	UPROPERTY(VisibleAnywhere)
 	class USceneComponent *RootScene;
 	
-	UPROPERTY(VisibleAnywhere)
 	class UParticleSystemComponent *MyParticleSystem;
 	
-	UPROPERTY(VisibleAnywhere)
 	class UStaticMeshComponent *flycone;
 	
 	class UMaterialInstanceDynamic* MaterialInstance;
