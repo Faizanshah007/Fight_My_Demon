@@ -24,7 +24,7 @@ public:
 	int32 CountdownTime;
 
 	UPROPERTY(EditAnywhere)
-	TArray<FString> StrArr = { TEXT("!!!!"), TEXT("here"), TEXT("is"), TEXT("Devil") };
+	TArray<FString> StrArr = { TEXT("!!!!"), TEXT("Here"), TEXT("is"), TEXT("Devil") };
 
 protected:
 	

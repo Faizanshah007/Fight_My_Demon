@@ -45,7 +45,7 @@ ACountdown::ACountdown()
 void ACountdown::BeginPlay()
 {
 	Super::BeginPlay();
-	AdvanceTimer();
+	CountdownText->SetText(TEXT(""));
 	GetWorldTimerManager().SetTimer(CountdownTimerHandle, this, &ACountdown::AdvanceTimer, 1.0f, true);
 }
 
