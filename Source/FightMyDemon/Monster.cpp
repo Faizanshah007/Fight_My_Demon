@@ -24,13 +24,6 @@ void AMonster::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	//Teleport Check
-	if (TeleportNow)
-	{
-		SetActorLocation(TeleportHere);
-		TeleportNow = false;
-	}
-
 }
 
 // Called to bind functionality to input

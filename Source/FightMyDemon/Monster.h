@@ -26,12 +26,4 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	//When To Teleport
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		bool TeleportNow = false;
-
-	//Place To Teleport
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FVector TeleportHere;
-
 };
